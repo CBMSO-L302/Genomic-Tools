@@ -14,7 +14,7 @@ In terminal, we launch this python script using the following arguments:
 
 `[2]`: has 2 options:
 
-- **WANTED file path** in .txt 
+- **file path** with the wanted sequences in .txt 
 with the id names of the selected fasta sequences from the FASTA file in `[1]`
 
     NOTE: don't add '>' to the names
