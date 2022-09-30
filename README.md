@@ -4,7 +4,7 @@ The genomic tools we present here were created with the purpose of extracting in
 
 ## coord_prot_to_gff.py
 
-Usage:
+_Usage:_
 
 In terminal, we launch this python script using the following arguments:
 
@@ -49,5 +49,66 @@ LdHU3.01
 LdHU3.07
 LdHU3.20
 ```
+_Example of output:_
+
+File: _LdHU3.36.gff.txt_
+
+Content:
+
+```
+LdHU3.36	Predicted Protein	CBMSO	119	370	.	+	.	LdHU3.36:119..370
+LdHU3.36	Predicted Protein	CBMSO	153	356	.	-	.	LdHU3.36:153..356..r
+LdHU3.36	Predicted Protein	CBMSO	166	426	.	-	.	LdHU3.36:166..426..r
+LdHU3.36	Predicted Protein	CBMSO	288	485	.	+	.	LdHU3.36:288..485
+LdHU3.36	Predicted Protein	CBMSO	355	501	.	+	.	LdHU3.36:355..501
+LdHU3.36	Predicted Protein	CBMSO	407	499	.	-	.	LdHU3.36:407..499..r
+```
+
 
 The colums of the gff file can be modified in the script.
+
+## DNA_to_proteins_fasta.py
+
+The usage is exactly as **coord_prot_to_gff.py**, with the form:
+
+`python DNA_to_proteins_fasta.py [1] [2] [3]`
+
+In this case, the extension output will be **.prot.fasta**
+
+_Example of usage 1:_
+
+`python DNA_to_proteins_fasta.py LdHU3.fasta wanted.txt 'joined'`
+
+It will look for the 'wanted' sequences in the LdHU3.fasta file and will have the output joined.prot.fasta
+
+_Example of usage 2:_
+
+`python DNA_to_proteins_fasta.py LdHU3.fasta 'all' 'separated'`
+
+It will extract all the proteins from all the reading frames from each sequence in the fasta file and extract them in separated files, one per sequence given in the LdHU3.fasta file.
+
+_Example of output:_
+
+File: _LdHU3.02.prot.fasta_
+
+Content:
+```
+>LdHU3.02:577..666
+MGLESARVVVVHVLRVCVCTLVGRVQDAH
+>LdHU3.02:784..942
+METPVKKKKVGHCGYLSQLVLLATRKRVDSHSRQACVREAGEKRLSKVLRQR
+>LdHU3.02:1756..2268
+MAIDNLVEFVPPHSIQAFLCVVDAQRRWDNPFVRNGRRQVARFHPPTAHMAQVAQVLWHLQVRVVVALHDVRHVWEGSVRVVQPYHDLLSHAYFRRETPRYRIAHFFFVVGLRSVKKSSHSELRWCSASCHNAADTWHTYCAAAVKAGVTGSDNWAERAARGEVPSTRLA
+>LdHU3.02:2479..3132
+MRCVLRITLRSSEHVELQQRASKVVLGARNLSVRQPRRPLRVPQRVALRLVRGRYAHHDQVPRSLTCAPRLRRVDEAALLRVRLDHPLPPRQFSCYVHVVRHARHGKQHGPHEAQRRRCCREHRKPFQPLVSRPVSGSPRIRSNRRSVRHIVEAHRAVLVDHAQRPRRQLITVQSHQRVIFRGSKTALCGRQPLSSSLVVHENRKRRWKLRFTGRLL
+>LdHU3.02:3225..3341:r
+MHGRMGYHRSFPLGYADILDDPRHNACAYKRNAVFWLR
+>LdHU3.02:2781..2900:r
+MRGDPLTGRETRGWKGFLCSRQHLRRWASWGPCCLPWRA
+>LdHU3.02:1563..1634:r
+MRACSCSTRTFSWDGNCKVFLLG
+>LdHU3.02:1068..1142:r
+MCHRVWKVVQHVSFLSPSTLGRQA
+```
+
+
