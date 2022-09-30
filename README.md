@@ -51,10 +51,7 @@ LdHU3.20
 ```
 _Example of output:_
 
-File: _LdHU3.36.gff.txt_
-
-Content:
-
+_LdHU3.36.gff.txt_
 ```
 LdHU3.36	Predicted Protein	CBMSO	119	370	.	+	.	LdHU3.36:119..370
 LdHU3.36	Predicted Protein	CBMSO	153	356	.	-	.	LdHU3.36:153..356..r
@@ -89,9 +86,7 @@ It will extract all the proteins from all the reading frames from each sequence 
 
 _Example of output:_
 
-File: _LdHU3.02.prot.fasta_
-
-Content:
+_LdHU3.02.prot.fasta_
 ```
 >LdHU3.02:577..666
 MGLESARVVVVHVLRVCVCTLVGRVQDAH
