@@ -10,7 +10,7 @@ In terminal, we launch this python script using the following arguments:
 
 `python coord_prot_to_gff.py [1] [2] [3]`
 
-`[1]`: **FASTA file path**
+`[1]`: **FASTA file path** with the **DNA** sequence(s)
 
 `[2]`: has 2 options:
 
