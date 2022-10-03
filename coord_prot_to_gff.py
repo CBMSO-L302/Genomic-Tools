@@ -172,6 +172,7 @@ class bio_seq:
                         proteins.append(current_prot)
                         
                         if sense == 'fw':
+                            #String will be the name of the protein in the fasta file (not necesary)
                             string=f'{seqname}{sep1}{initposition}{sep2}{endposition}'
                             coordinates_prot= tuple([chrom, Type, Center, initposition, endposition, '.', '+', '.', string])
                             prot_coord.append(coordinates_prot)
