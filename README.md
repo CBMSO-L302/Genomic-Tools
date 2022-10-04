@@ -6,7 +6,7 @@ The genomic tools we present here were created with the purpose of extracting in
 
 Recommendation:
 
-Before the usage of these scripts, save the path in a variable, for example, $SCRIPT:
+Before the usage of these scripts, save the path in a variable, for example, `$SCRIPT`:
 
 `SCRIPT=/Path_to_script`
 
