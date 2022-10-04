@@ -8,9 +8,9 @@ Recommendation:
 
 Before the usage of these scripts, save the path in a variable, for example, `$SCRIPT`:
 
-`SCRIPT=/Path_to_script`
+`SCRIPT=/Path/to/script`
 
-Where "Path_to_script" should be substituted by the folder path where you have the script.
+Where "Path/to/script" should be substituted by the folder path where you have the script.
 
 _Usage:_
 
