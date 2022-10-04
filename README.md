@@ -49,8 +49,8 @@ _Example of usage 2:_
 
 This will read the target sequences specified in wanted.txt and output them in separated files with the format 'sequencename'.gff.txt
 
-Example of WANTED file (wanted.txt): 
-In case I wanted the chromosomes 01, 07 and 20 from the LdHU3 genome, the wanted.txt file would be:
+Example of WANTED file (_wanted.txt_): 
+If I needed the chromosomes 01 07 and 20 from the LdHU3 genome, the _wanted.txt_ file would be:
 
 ```
 LdHU3.01
