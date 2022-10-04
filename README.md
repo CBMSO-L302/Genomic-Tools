@@ -4,11 +4,19 @@ The genomic tools we present here were created with the purpose of extracting in
 
 ## coord_prot_to_gff.py
 
+Recommendation:
+
+Before the usage of these scripts, save the path in a variable, for example, $SCRIPT:
+
+`SCRIPT=/Path_to_script`
+
+Where "Path_to_script" should be substituted by the folder path where you have the script.
+
 _Usage:_
 
 In terminal, we launch this python script using the following arguments:
 
-`python coord_prot_to_gff.py [1] [2] [3]`
+`python $SCRIPT/coord_prot_to_gff.py [1] [2] [3]`
 
 `[1]`: **FASTA file path** with the **DNA** sequence(s)
 
@@ -31,13 +39,13 @@ The files will be automatically named with the name of the fasta sequence and th
 
 _Example of usage 1:_
 
-`python coord_prot_to_gff.py LdHU3.fasta 'all' 'joined'`
+`python $SCRIPT/coord_prot_to_gff.py LdHU3.fasta 'all' 'joined'`
 
 This will read ALL the sequences from the LdHU3.fasta file and will have the output joined.gff.txt
 
 _Example of usage 2:_
 
-`python coord_prot_to_gff.py LdHU3.fasta wanted.txt 'separated'`
+`python $SCRIPT/coord_prot_to_gff.py LdHU3.fasta wanted.txt 'separated'`
 
 This will read the target sequences specified in wanted.txt and output them in separated files with the format 'sequencename'.gff.txt
 
@@ -61,26 +69,27 @@ LdHU3.36	Predicted Protein	CBMSO	355	501	.	+	.	LdHU3.36:355..501
 LdHU3.36	Predicted Protein	CBMSO	407	499	.	-	.	LdHU3.36:407..499..r
 ```
 
+The colums of the gff file can be modified within the script.
 
-The colums of the gff file can be modified in the script.
+The output file will be created inside the current working directory.
 
 ## DNA_to_proteins_fasta.py
 
 The usage is exactly as **coord_prot_to_gff.py**, with the form:
 
-`python DNA_to_proteins_fasta.py [1] [2] [3]`
+`python $SCRIPT/DNA_to_proteins_fasta.py [1] [2] [3]`
 
 In this case, the extension output will be **.prot.fasta**
 
 _Example of usage 1:_
 
-`python DNA_to_proteins_fasta.py LdHU3.fasta wanted.txt 'joined'`
+`python $SCRIPT/DNA_to_proteins_fasta.py LdHU3.fasta wanted.txt 'joined'`
 
 It will look for the 'wanted' sequences in the LdHU3.fasta file and will have the output joined.prot.fasta
 
 _Example of usage 2:_
 
-`python DNA_to_proteins_fasta.py LdHU3.fasta 'all' 'separated'`
+`python $SCRIPT/DNA_to_proteins_fasta.py LdHU3.fasta 'all' 'separated'`
 
 It will extract all the proteins from all the reading frames from each sequence in the fasta file and extract them in separated files, one per sequence given in the LdHU3.fasta file.
 
@@ -105,5 +114,9 @@ MRACSCSTRTFSWDGNCKVFLLG
 >LdHU3.02:1068..1142:r
 MCHRVWKVVQHVSFLSPSTLGRQA
 ```
+
+The output file will also be created inside the current working directory.
+
+
 
 
