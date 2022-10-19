@@ -2,6 +2,10 @@
 
 The genomic tools we present here were created with the purpose of extracting information from eukaryotic DNA files in FASTA format.
 
+The following tools will NOT extract ALL possible proteins, but the LONGEST proteins for each reading frame. 
+
+The threshold stablished for the program to extract a protein is 20 aminoacids. 
+
 ## coord_prot_to_gff.py
 
 Recommendation:
