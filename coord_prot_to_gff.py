@@ -167,7 +167,7 @@ class bio_seq:
                 # STOP accumulating amino acids if _ - STOP was found
                 if current_prot:
                     
-                    if n > 20:
+                    if n > 19:
                     #Minimum length for storing a protein = 20aa
                         proteins.append(current_prot)
                         
