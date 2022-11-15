@@ -165,7 +165,7 @@ class bio_seq:
                     
                     #length between 11 and 100
                     if n > 10:
-                        if n < 101
+                        if n < 101:
                             
                             proteins.append(current_prot)
 
@@ -186,6 +186,8 @@ class bio_seq:
                             coordinates_prot = []
                         else:
                             current_prot = []
+                    else:
+                        current_prot = []
             else:
                 # START accumulating amino acids if M - START was found
                 if aa == "M":
