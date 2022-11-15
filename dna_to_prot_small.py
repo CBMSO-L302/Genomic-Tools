@@ -183,8 +183,12 @@ class bio_seq:
 
                             current_prot = []
                             coordinates_prot = []
+                        else:
+                            current_prot = []
                     else:
                         current_prot = []
+                   
+                        
             else:
                 # START accumulating amino acids if M - START was found
                 if aa == "M":
