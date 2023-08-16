@@ -121,6 +121,30 @@ MCHRVWKVVQHVSFLSPSTLGRQA
 
 The output file will also be created inside the current working directory.
 
+NOTE: The script may fail if the fasta file has spaces. Therefore, we created a small tool named "remove_spaces.sh", which substitutes spaces with low bars.
 
+Usage:
+`bash remove_spaces.sh -q (fasta file) -o (Output file, with path)`
+
+_Example_
+
+`bash remove_spaces.sh -q /path/to/LdHU3.fasta -o /path/to/LdHU3_no_spaces.fasta`
+
+_Input_
+
+```
+>LdHU3 12762 12883 r
+MSALKHDFJLLV
+>LdHU3 13472 14290
+MMPARKVLVLKRRDVMVL
+```
+ _Output_
+
+```
+>LdHU3_12762_12883_r
+MSALKHDFJLLV
+>LdHU3_13472_14290
+MMPARKVLVLKRRDVMVL
+```
 
 
